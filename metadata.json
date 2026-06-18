@@ -1,0 +1,6 @@
+{
+  "name": "Noor Al-Quran",
+  "description": "A polished offline-first Quran explorer with audio streaming of 10 world-class reciters, habit tracking, journaling, interactive Tajweed highlights, and server-side AI Tafsir reflection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

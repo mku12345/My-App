@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-arabic: "Amiri", "Scheherazade New", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-primary: #047857; /* emerald-700 */
+  --color-brand-secondary: #c2410c; /* orange-700 */
+  --color-brand-accent: #b45309; /* amber-700 */
+  
+  --color-bg-cream: #faf9f6;
+  --color-border-subtle: #f1f0ea;
+}
+
+/* Custom scrolling classes & focus animations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Elegant animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Tajweed color guides */
+.tajweed-qalqalah {
+  color: #c2410c; /* reddish-orange for echoing letters */
+  font-weight: 600;
+}
+.tajweed-ghunnah {
+  color: #047857; /* emerald for nasalization */
+  font-weight: 600;
+}
+.tajweed-madd {
+  color: #1d4ed8; /* blue for elongation */
+  font-weight: 600;
+}
+.tajweed-ikhfa {
+  color: #b45309; /* amber for hiding */
+  font-weight: 600;
+}
+
